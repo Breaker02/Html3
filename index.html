@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMD</title>
+    <style>
+        body{
+            margin: 0; padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+        }
+        ul, li, ol {list-style:none; margin:0; padding:0;}
+        header{width: 100%; height: 80px; margin: 0 auto;}
+        #logo{width: 135px; height: 75px; margin: 5px 0 0 10px; float: left;}
+        #logo > img{width: 100%; height: 100%;}
+        
+        nav{width: 740px; height: 30px; margin: 32px 30px 0 0; float: left;}
+        nav ul{font-family: "Arial"; font-weight: bold;}
+        nav ul li{float: left; padding: 0 20px;}
+        nav ul li a{color: white; text-decoration: none; }
+        nav ul li a:hover{color: red;}
+
+        nav2{width: 200px; height: 30px; margin: 32px 10px 0 0; float: right;}
+        nav2 ul{font-family: "Arial"; font-weight: bold;}
+        nav2 ul li{float: left; padding: 0 20px;}
+        nav2 ul li a{color: white; text-decoration: none; }
+        nav2 ul li a:hover{color: red;}
+        
+        #slider{width: 100%; height: 450px; margin: 0 auto;  overflow: hidden;}
+        #slider img{width: 100%; height: 100%; object-fit: cover;}
+        section{max-width: 1100px; width: 90%; height: 280px; margin: 0 auto;
+            display: flex; /* Flexbox를 사용하여 가로 배치 */
+            justify-content: space-between; /* 공간을 고르게 배분 */
+            flex-wrap: nowrap; /* 자동 줄바꿈 방지 */
+        }
+
+        section1{max-width: 1100px; width: 90%; height: 400px; margin: 0 auto;
+            display: flex; /* Flexbox를 사용하여 가로 배치 */
+            justify-content: space-between; /* 공간을 고르게 배분 */
+            flex-wrap: nowrap; /* 자동 줄바꿈 방지 */
+        }
+
+        article{width: 340px; height: 220px; float: left; margin: 30px 10px; 
+            box-sizing: border-box;
+            overflow: hidden;  /* 화면 밖으로 나가는 내용 숨기기 */
+        }
+        article h3{margin:0; font-size: 16px; height: 22px; width: 100%; color: white; background-color: black;}
+        article img{float: left; margin: 0 5px 0 0;}
+        article h4{margin: 2px; font-size: 14px; height: 20px; color: white;}
+        article p{font-family: "Arial"; font-size: 11px; font-weight: lighter; color: white; }
+        article .icon{width: 100px; height: 100px; float: left; max-width: 0 0 0 5px; text-align: center;}
+        article .icon img{float: left; margin: 20px 0 0 40px;}
+        article .icon span{color: white; width: 100%; text-align: center; float: left; font-size: 12px; margin: 4px 0 0 20px;}
+
+        article2{width: 340px; height: 350px; margin: 30px 10px; 
+            box-sizing: border-box;
+            overflow: hidden;  /* 화면 밖으로 나가는 내용 숨기기 */
+        }
+        article2 h3{margin:0; font-size: 20px; height: 22px; width: 100%; color: white; background-color: black;}
+        article2 img{float: left; margin: 20px auto 10px 50px; display: block;}
+        article2 h4{margin: 2px auto 0 45px; font-size: 14px; height: 20px; color: white; float: inline-start;}
+        article2 p{margin: 20px auto 0 45px;font-family: "Arial"; font-size: 11px; font-weight: lighter; color: white; float: inline-start; }
+        article2 button{margin: 20px 0 0 45px; width: 100px; height: 30px; background-color: black; color: white; border: none; border-radius: 5px; font-size: 12px; font-weight: bold; border: 1px solid white;}
+        article2 .icon{width: 100px; height: 100px; float: left; max-width: 0 0 0 5px; text-align: center;}
+        article2 .icon img{float: left; margin: 20px 0 0 40px;}
+        article2 .icon span{color: white; width: 100%; text-align: center; float: left; font-size: 12px; margin: 4px 0 0 20px;}
+
+        footer{width: 100%; height: 100px; margin: 0 auto;
+            display: flex; /* 가로 정렬 */
+            flex-direction: column; /* 세로 방향 정렬 */
+            align-items: center; /* 가로 중앙 정렬 */
+            justify-content: center; /* 세로 중앙 정렬 */
+            background: linear-gradient(to top, white 70%, rgba(255, 255, 255, 0.7) 85%, rgba(51, 51, 51, 0) 95%);
+        }
+        footer p{font-family: "Arial"; font-size: 13px; color: #666; margin: 25px 0 0 0; float: left;}
+
+    </style>
+</head>
+<b>
+    <header>
+        <div id = "logo"> <img src="img/amg_logo.jpg" alt="로고"> </div>
+        <nav>
+            <ul>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Solution</a></li>
+                <li><a href="#">Download&Support</a></li>
+                <li><a href="#">Where to buy</a></li>
+            </ul>
+        </nav>
+        <nav2>
+            <ul>
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#">Sign up</a></li>
+            </ul>
+        </nav2>
+    </header>
+    <div id = "slider"><img src="img/amg_1.jpg"></div>
+    <section1>
+        <article2>
+            <h3>Main Products</h3>
+            <a href="#"><img src="img/amd_cpu.jpg" ></a>
+            <h4>Change the way you play the game</h4>
+            <p>AMD Ryzen™ 7000 Series Desktop Processors</p>
+            <button>Find a retailer</button>
+        </article2>
+        <article2>
+            <h3></h3>
+            <a href="#"><img src="img/amd_pc.jpg" ></a>
+            <h4>Experience the best performance only with AMD</h4>
+            <p>AMD Ryzen™ 7000 Series Desktop Processors</p>
+            <button>Learn more</button>
+        </article2>
+        <article2>
+            <h3></h3>
+            <a href="#"><img src="img/amd_rad.jpg" ></a>
+            <h4>Extreme immersion at every moment</h4>
+            <p>AMD Ryzen™ 7000 Series Desktop Processors</p>
+            <button>Find a retailer</button>
+        </article2>
+    </section1>
+    <section>
+        <article>
+            <h3>NEWS</h3>
+            <a href="#"><img src="img/amd_01.jpg" ></a>
+            <h4>RYZEN 9800X3D</h4>
+            <p>The AMD Ryzen 9 9800X3D is a high-performance desktop processor featuring 3D V-Cache technology, significantly enhancing gaming and multitasking performance.</p>
+        </article>
+        <article>
+            <h3>AMD Model</h3>
+            <a href="#"><img src="img/amg_3.png"></a>
+        </article>
+        <article>
+            <h3>Customer Support</h3>
+            <div class="icon">
+                <a href="#"><img src="img/acc.png"></a>
+                <span>announcement</span>
+            </div>
+            <div class="icon">
+                <a href="#"><img src="img/inquiry.jpg"></a>
+                <span>inquiry</span>
+            </div>
+            <div class="icon">
+                <a href="#"><img src="img/fnq.png"></a>
+                <span>FAQ</span>
+            </div>
+            <div class="icon">
+                <a href="https://www.facebook.com/AMDIndia/"target="_blank"><img src="img/facebook.jpg"></a>
+                <span>facebook</span>
+            </div>
+            <div class="icon">
+                <a href="https://www.instagram.com/amd/"target="_blank"><img src="img/instagram.png"></a>
+                <span>instagram</span>
+            </div>
+            <div class="icon">
+                <a href="https://x.com/amd"target="_blank"><img src="img/x.png"></a>
+                <span>X</span>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p>Terms of Use | Privacy | brand | Supply Chain Transparency | Fair and open competition | UK Tax Strategy | Cookie Policy | Cookie Settings &nbsp;&nbsp;&nbsp; © 2025 Advanced Micro Devices, Inc.</p>
+    </footer>
+</body>
+</html>
